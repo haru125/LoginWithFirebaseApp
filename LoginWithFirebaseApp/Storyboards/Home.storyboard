@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="HomeViewController" customModule="LoginWithFirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9zN-19-r9p">
+                                <rect key="frame" x="88" y="184" width="238" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="さんようこそ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="69g-Ln-1ps">
+                                <rect key="frame" x="146" y="356" width="122.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="test@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5H0-bG-Nnt">
+                                <rect key="frame" x="136.5" y="400" width="141" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="作成日：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CW5-lV-RQr">
+                                <rect key="frame" x="172.5" y="444" width="69.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VUp-1A-EkK">
+                                <rect key="frame" x="107" y="535" width="200" height="50"/>
+                                <color key="backgroundColor" red="0.2156862745" green="0.6705882353" blue="0.61568627450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="k4x-4n-0J8"/>
+                                    <constraint firstAttribute="height" constant="50" id="xC6-9M-NRH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleColor" red="0.92941176469999998" green="0.94509803920000002" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedLogoutButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="5aZ-Y5-bdc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.30196078430000001" green="0.75294117650000003" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5H0-bG-Nnt" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="FMi-O4-xyo"/>
+                            <constraint firstItem="9zN-19-r9p" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="140" id="OSU-rM-YdZ"/>
+                            <constraint firstItem="CW5-lV-RQr" firstAttribute="top" secondItem="5H0-bG-Nnt" secondAttribute="bottom" constant="20" id="Pw1-Zt-mJo"/>
+                            <constraint firstItem="9zN-19-r9p" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="SHc-Dm-w01"/>
+                            <constraint firstItem="69g-Ln-1ps" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="ZqC-3Z-zDc"/>
+                            <constraint firstItem="VUp-1A-EkK" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="bj3-Xj-XSY"/>
+                            <constraint firstItem="69g-Ln-1ps" firstAttribute="top" secondItem="9zN-19-r9p" secondAttribute="bottom" constant="100" id="dTm-7I-qro"/>
+                            <constraint firstItem="VUp-1A-EkK" firstAttribute="top" secondItem="CW5-lV-RQr" secondAttribute="bottom" constant="70" id="dqL-by-9LD"/>
+                            <constraint firstItem="CW5-lV-RQr" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="tdz-KT-klP"/>
+                            <constraint firstItem="5H0-bG-Nnt" firstAttribute="top" secondItem="69g-Ln-1ps" secondAttribute="bottom" constant="20" id="zr6-Pa-qXp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dateLabel" destination="CW5-lV-RQr" id="9Wf-8v-3GJ"/>
+                        <outlet property="emailLabel" destination="5H0-bG-Nnt" id="bK9-hN-Ipa"/>
+                        <outlet property="logoutButton" destination="VUp-1A-EkK" id="ZDc-Z2-x6W"/>
+                        <outlet property="nameLabel" destination="69g-Ln-1ps" id="7j0-ov-exg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="28.794642857142854"/>
+        </scene>
+    </scenes>
+</document>
